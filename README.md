@@ -17,14 +17,7 @@ Crontab is used to schedule tasks in Linux. For example, we use crontab to sched
 Crontab Syntax
 The syntax of a crontab entry consists of five time and date fields followed by the command to be executed:
 
-*     *     *     *     *  command to be executed
--     -     -     -     -
-|     |     |     |     |
-|     |     |     |     +----- Day of the week (0 - 7) (Sunday = 0 or 7)
-|     |     |     +------- Month (1 - 12)
-|     |     +--------- Day of the month (1 - 31)
-|     +----------- Hour (0 - 23)
-+------------- Minute (0 - 59)
+![image](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/04478a46-c384-452d-8813-1c48a656e1c8)
 
 
 Example Crontab Entries
