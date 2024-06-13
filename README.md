@@ -5,16 +5,33 @@ Report on My 200-Hour School Project: IT Park Manager, Backup System, and Networ
 This document presents the detailed report of my 200-hour school project, which focused on managing an IT park, developing a backup system, and enhancing networking infrastructure. This project was conducted in the Polypeptide stand-alone environment.
 I would like to extend my gratitude to Polypeptide for providing me the opportunity to undertake and complete this project.
 
-Automated Snapshot and Backup Scripts
-As part of this project, I developed two key scripts to enhance our backup and recovery processes:
-
 Automated Snapshot Script (snapshot.sh):
 This script automates the snapshot process in VirtualBox, eliminating the need for manual intervention. By using this script, we ensure that regular snapshots of virtual machines are taken, providing a reliable point of recovery in case of issues.
 
 OVF Export Script:
-This additional Bash script exports the GLPI VM as an .OVF file from VirtualBox. This export facilitates the backup process, allowing us to have a restorable copy of the virtual machine in case of problems with our physical server.
-These scripts significantly enhance our system's resilience and ensure that we can quickly recover from any hardware failures or other issues.
+This additional Bash script exports the GLPI VM as an .OVF file from VirtualBox. This export facilitates the backup process, allowing us to have a restorable copy of the virtual machine in case of problems with our physical server. These scripts significantly enhance our system's resilience and ensure that we can quickly recover from any hardware failures or other issues.
 
+Crontab in Linux:
+Crontab is used to schedule tasks in Linux. For example, we use crontab to schedule our two scripts: one to take snapshots and another to export .ovf files from VirtualBox.
+
+Crontab Syntax
+The syntax of a crontab entry consists of five time and date fields followed by the command to be executed:
+
+*     *     *     *     *  command to be executed
+-     -     -     -     -
+|     |     |     |     |
+|     |     |     |     +----- Day of the week (0 - 7) (Sunday = 0 or 7)
+|     |     |     +------- Month (1 - 12)
+|     |     +--------- Day of the month (1 - 31)
+|     +----------- Hour (0 - 23)
++------------- Minute (0 - 59)
+
+
+Example Crontab Entries
+Run the Snapshot Script Daily at Midnight
+0 0 * * * /path/to/snapshot.sh
+Run the OVF Export Script Weekly at 2:00 AM on Sundays:
+0 2 * * 0 /path/to/ovf-export.sh
 
   ![Stand-Alone-Network-MCLAG-ICL](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/2a0c04dd-8a93-4eff-8cd5-8af51e60da1b)
 
