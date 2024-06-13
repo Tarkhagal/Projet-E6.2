@@ -14,3 +14,8 @@ This script automates the snapshot process in VirtualBox, eliminating the need f
 OVF Export Script:
 This additional Bash script exports the GLPI VM as an .OVF file from VirtualBox. This export facilitates the backup process, allowing us to have a restorable copy of the virtual machine in case of problems with our physical server.
 These scripts significantly enhance our system's resilience and ensure that we can quickly recover from any hardware failures or other issues.
+
+
+  ![Stand-Alone-Network-MCLAG-ICL](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/2a0c04dd-8a93-4eff-8cd5-8af51e60da1b)
+
+In this image, we can see our triangular-shaped network that utilizes MC-LAG (Multi-Chassis Link Aggregation Group) and ICL (Inter-Chassis Link) technology. These technologies offer several advantages, including improved redundancy, increased bandwidth, and enhanced network resilience. By implementing MC-LAG and ICL, our network ensures high availability and seamless failover, leading to more reliable and efficient operations.
