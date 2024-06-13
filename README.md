@@ -19,3 +19,10 @@ These scripts significantly enhance our system's resilience and ensure that we c
   ![Stand-Alone-Network-MCLAG-ICL](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/2a0c04dd-8a93-4eff-8cd5-8af51e60da1b)
 
 In this image, we can see our triangular-shaped network that utilizes MC-LAG (Multi-Chassis Link Aggregation Group) and ICL (Inter-Chassis Link) technology. These technologies offer several advantages, including improved redundancy, increased bandwidth, and enhanced network resilience. By implementing MC-LAG and ICL, our network ensures high availability and seamless failover, leading to more reliable and efficient operations.
+
+
+![image](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/643d4c4b-c153-455f-b0ae-6ad7fa3b81d3)
+
+
+In this image, we can see that I use GLPI, which stands for "Gestionnaire Libre de Parc Informatique" (Free IT Equipment Manager). I chose GLPI because it is simple to install on a Debian server, is open source, and allows for the addition of various plugins. In this case, I am using the GLPI Inventory plugin to track our laptops, PCs, software licenses, monitors, and other equipment.
+
