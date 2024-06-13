@@ -26,3 +26,7 @@ In this image, we can see our triangular-shaped network that utilizes MC-LAG (Mu
 
 In this image, we can see that I use GLPI, which stands for "Gestionnaire Libre de Parc Informatique" (Free IT Equipment Manager). I chose GLPI because it is simple to install on a Debian server, is open source, and allows for the addition of various plugins. In this case, I am using the GLPI Inventory plugin to track our laptops, PCs, software licenses, monitors, and other equipment.
 
+![image](https://github.com/Tarkhagal/Projet-E6.2/assets/145452931/fdf05ae4-1ea9-46bd-b268-455e4e0fb1e3)
+
+
+Lastly, in this image, we can see our backup server, which is called Proxmox Backup. With this software, we can back up virtual machines, containers, host systems, and various files. In our case, we are using it to back up our exported .ovf files from VirtualBox.
